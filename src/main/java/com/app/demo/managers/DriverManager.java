@@ -2,6 +2,7 @@ package com.app.demo.managers;
 
 import com.app.demo.base.BrowserType;
 import com.app.demo.base.EnvironmentType;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -42,9 +43,11 @@ public class DriverManager {
     private WebDriver createLocalDriver() {
         switch (driverType) {
             case FIREFOX:
+                WebDriverManager.firefoxdriver().setup();
                 driver = new FirefoxDriver();
                 break;
             case CHROME:
+                WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver();
                 break;
             case IE:

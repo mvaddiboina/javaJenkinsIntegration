@@ -10,10 +10,10 @@
             <class name="com.app.demo.runner.Runner"/>
         </classes>
     </test>
-    <test name="FirefoxTest">
-        <parameter name="browser" value="Firefox"/>
-        <classes>
-            <class name="com.app.demo.runner.Runner"/>
-        </classes>
-    </test>
+<!--    <test name="FirefoxTest">-->
+<!--        <parameter name="browser" value="Firefox"/>-->
+<!--        <classes>-->
+<!--            <class name="com.app.demo.runner.Runner"/>-->
+<!--        </classes>-->
+<!--    </test>-->
 </suite>
